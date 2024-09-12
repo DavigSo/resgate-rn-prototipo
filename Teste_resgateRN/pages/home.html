@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações para Mães e Bebês</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Abrace um RN</div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="doar.html">Doar</a></li>
+                <li><a href="receber.html">Receber</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <a class="login-btn" href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Carrossel de Imagens -->
+        <div class="carousel-container">
+            <div class="carousel">
+                <div class="carousel-slide active" style="background-image: url('https://www.gov.br/cnpq/pt-br/assuntos/noticias/pesquisa-do-dia/mateiraidadegestacional.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('https://www.naturabrasil.fr/content/files/natura/fr/a%20propos/nos%20gammes/casting-mama-bebe-c8.jpg');"></div>
+                <div class="carousel-slide" style="background-image: url('https://www.naturabrasil.fr/content/files/natura/fr/a%20propos/nos%20gammes/landing_mama-bebe_13.jpg');"></div>
+            </div>
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
+        </div>
+
+        <section class="hero">
+            <h1>Doe itens essenciais para mães e bebês</h1>
+            <p>Ajude quem mais precisa, com poucos cliques.</p>
+            <button onclick="checkLogin()">Doe Agora</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Doações para Mães e Bebês. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

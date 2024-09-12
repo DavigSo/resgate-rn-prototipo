@@ -1,0 +1,42 @@
+/* Container do Carrossel */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slides do Carrossel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: 400px; /* Ajuste conforme necessário */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Botões de Navegação */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
